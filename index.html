@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Copyright" content="">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>Úvod</title>
+    <title>restapi client</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="table">
+    </div>
+    <div id="commands">
+        <div class="req" id="get">
+            <div class="labels">
+                <div>Příjmení (id):</div>
+                <input id="get-input" type="text">
+            </div>
+        </div>
+        <div class="req" id="post">
+            <div class="labels">
+                <div>Jméno:</div>
+                <input id="post-name" type="text">
+                <div>Příjmení:</div>
+                <input id="post-surname" type="text">
+                <div>Telefonní číslo:</div>
+                <input id="post-number" type="text">
+            </div>
+        </div>
+        <div class="req" id="put">
+            <div class="labels">
+                <div>Příjmení (id):</div>
+                <input id="put-surname-id" type="text">
+                <div>Jméno:</div>
+                <input id="put-name" type="text">
+                <div>Příjmení:</div>
+                <input id="put-surname" type="text">
+                <div>Telefonní číslo:</div>
+                <input id="put-number" type="text">
+            </div>
+        </div>
+        <div class="req" id="delete">
+            <div class="labels">
+                <div>Příjmení:</div>
+                <input id="delete-id" type="text">
+            </div>
+        </div>
+    </div>
+    <div id="buttons">
+        <button class="buttons" id="getbutton"
+            onclick="getPerson(document.getElementById('get-input').value)">GET</button>
+        <button class="buttons" id="postbutton" onclick="post()">POST</button>
+        <button class="buttons" id="putbutton" onclick="put(document.getElementById('put-surname-id').value)">PUT</button>
+        <button class="buttons" id="deletebutton" onclick="del(document.getElementById('delete-id').value)">DELETE</button>
+    </div>
+    <div id="loadbuttondiv">
+        <button id="loadbutton"  onclick="getall()">LOAD PEOPLE</button>
+    </div>
+    <script src="client.js"></script>
+</body>
+
+</html>

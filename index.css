@@ -1,0 +1,67 @@
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#commands {
+    display: flex;
+    justify-content: space-evenly;
+}
+.req{
+    margin: 0;
+    background-color: beige;
+    border-radius: 2%;
+    border-color: black 2px;
+    width: 20%;
+    height: 250px;
+    border: black solid 2px;
+    padding: 20px;
+}
+.labels{
+    font-size: 20px;
+}
+input{
+    font-size: 20px;
+}
+
+.inputs{
+    display: inline-block;
+}
+
+#loadbuttondiv{
+    
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#loadbutton{
+    font-size: 30px;
+    background-color: red;
+    color: cornsilk;
+    border-radius: 2%;
+    width: 20%;
+    height: 100px;
+}
+
+
+.buttons {
+    font-size: 30px;
+    margin-top: 5px;
+    background-color: blue;
+    color: cornsilk;
+    border-radius: 2%;
+    width: 20%;
+    height: 100px;
+}
+
+#table {
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    border: crimson solid;
+    font-size: 30px;
+}
